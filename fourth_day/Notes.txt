@@ -1,0 +1,8 @@
+-Day 4 - 
+Div's can exist within Div 
+helps with containging and controling positioning
+
+
+bottom: , top:, right: etc are like setting it directly to that position 
+bottom:0; will set to bottom exactly
+

@@ -1,0 +1,28 @@
+.box {
+    height: 60px;
+}
+.box1 {
+    background: purple;
+    position: fixed;
+}
+
+.box2 {
+    background: red;
+    position: relative;
+    height: 140px;
+}
+
+.box3 {
+    background: yellow;
+    position: absolute;
+    right: 0px;
+    bottom: 0;
+}
+
+.box4 {
+    background: orange;
+}
+body {
+    width: 30%;
+    margin: auto;
+}
