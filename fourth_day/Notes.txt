@@ -6,3 +6,10 @@ helps with containging and controling positioning
 bottom: , top:, right: etc are like setting it directly to that position 
 bottom:0; will set to bottom exactly
 
+CSS -
+Reset sheets can be googled and are generally added as the first CSS to be referenced
+then you create another CSS sheet that makes the changes to it.
+
+
+on gitpages the html must be index.html  NO CAPS
+

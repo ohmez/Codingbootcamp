@@ -1,0 +1,15 @@
+when using pseudo-class you need to reference it in the css syntax tag
+hover ,default, 
+example:
+a:hover {
+color: orange;
+}
+
+maxcdn.bootstrapcdn.com 
+
+CDN is a directory that cache's the CSS files etc. google has one, etc
+
+bootstrap or cssgrid are options for importing pre-built CSS etc.
+
+
+google fonts - search that to try to find new fonts, you can link these in HTML.
