@@ -1,0 +1,30 @@
+Day 6 Notes
+
+Bootstrap - contains reset within - probably best to get very familiar with
+starting sites like this and then adding custom CSS ontop of bootstrap.
+
+Wireframing - figma.com - 
+
+free source to help design prototype sites
+
+when using columns in bootstrap
+
+take 12 divided by the total columns you want to get the col-lg-< #>
+
+so if I want 3 columns I take 12 / 3 = 3 goes into 12 4 times meaning 4.
+
+adding in placeholder images
+https://picsum.photos/150/150
+backslashes controls width and height. 
+
+
+
+
+
+
+
+
+
+
+
+11:39 AM 8/25/2018 <<< F5 pastes timestamp in notepad
