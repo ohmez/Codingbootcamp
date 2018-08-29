@@ -1,0 +1,23 @@
+java script is ecma script
+
+java is not java script
+
+everything is 1 of 3 types
+String - words "" ''
+number - number only
+boolean - true or false only
+
+
+if using if/else you need a boolean to initate the true/false, since if/else
+is opperating as if this is true then A if else B else C else ETC....
+
+capitolizations and semi-colons are important in javascripts
+
+when using booleans you can do
+ if = (true or false ) -- this is checking the assignments 
+if == - this is checking that they match
+if === - this is checking for exact match, variable type and variable value
+
+----- so === will say that '21' and 21 are not equal because '21' is a string
+------ while == will say that '21' and 21 are equal because they both are 21 just
+one is a string and one is a number.
