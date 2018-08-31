@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <meta http-equiv="X-UA-Compatible" content="ie=edge">
+ <title>Document</title>
+</head>
+<body>
+ <p>Player chose <span id="playerChoice"><strong>...</strong></span></p>
+ <p>Computer chose <span id="computerChoice">...</span></p>
+ <p><span id="winner"></span> wins!</p>
+ <p>Player wins: <span id="playerWins">...</span></p>
+ <p>Computer wins: <span id="computerWins">...</span></p>
+ <p>Ties: <span id="ties">...</span></p>
+ <script type="text/javascript">
+ 
+ var playerChoice = document.getElementById("playerChoice");
+ var computerChoices = ["r", "p", "s"];
+ var playerWins = 0;
+ var computerWins = 0;
+ var ties = 0;
+ var computerChoice = document.getElementById("computerChoice");
+
+
+
+console.log(ties +1);
+console.log(computerChoice);
+console.log(playerChoice);
+
+    document.onkeyup = function(event) {
+        playerChoice.textContent = event.key;
+        computerChoice.textContent = (computerChoices[Math.floor(Math.random() * computerChoices.length)]);
+        if (playerChoice.innerText === computerChoice.innerText) {
+            ties++;
+            console.log(ties);
+        };
+    };
+
+
+
+
+
+ 
+ </script>
+</body>
+</html>

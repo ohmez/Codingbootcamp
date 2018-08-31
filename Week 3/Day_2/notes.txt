@@ -1,0 +1,33 @@
+Java Script
+Variables are the nouns of coding - things,
+Variables contain a name and a value
+
+Console.log prints to the console - which is hidden 
+Alert - creates a pop up
+Prompt - creats an input field - has a default which means there must be 	other options.
+Document.write - writes the data into the body wherever it is within the script, placement on the page is random and risky. possibly could be used for inputting into specific fields maybe?
+
+Var fruit = ["apple", "banana", "kiwi"]
+var even = [ 2,4,6,8,10]
+Each item inside the array is marked as an index, indexes' are always 1 less than the total because they start at 0. 
+so var even length is 5 but its index is 0-4.
+
+call to indiex by fruit[0-2]; or even[0-4]
+
+
+Creating for loops - 
+// Looping through each item in the array and logging a message to the console.
+      for (var i = 0; i < vegetables.length; i++) {
+        console.log("I love " + vegetables[i]);
+      }
+
+
+for ( declaration; condition; incrementer)
+condition means it will run as long as condition is true
+incrementer tells it what to do at the end of the loop. 
+
+you can place if inside of the for { } 
+
+events are anytime something is done, moving the mouse or clicking, hitting keys, etc, are all events, eventlisteners are to catch actions being done. 
+
+
