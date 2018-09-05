@@ -1,0 +1,23 @@
+JavaScript
+
+.length will tell us the length of the array
+.push will add to a premade varriable or array.
+Math.Random - generates random # from 0-1 (mainly decimals) helps with RNG.
+
+
+this.____ is referencing itself in the , this is when a function lives inside of a variable. 
+
+
+if we call a function that doesn't return it will just say undefined, you must return the result of the function.
+
+console.log(car.driveToWork) will show the code for the function of driveToWork.
+instead you apply the function to the variable car.
+
+car.driveToWork(); - this will run the function that is in the varriable car which is driveToWork. 
+
+
+method is a function iside of an object. 
+
+an object is a varriable or array or...
+
+
