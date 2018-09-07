@@ -1,0 +1,26 @@
+javascript 
+css selectors 
+id = #
+class = .
+
+document.body.addEventListener('keyup', function (event) { 
+/// do stuff 
+};
+
+document.onkeyup can only listen to one onkeyup, the event listener function above is able to have multiple event listeners and they'll all work.
+
+DOM deals with the API that allows us to interact w/ the HTML page.
+
+" document. " in javascript is using the DOM
+
+jquery can be found by googling jquery CDN. 
+ ALWAYS USE MINIFIED  - this is for future use of ajax. 
+
+jquery 
+
+$ runs some logic to determine things like
+document.body
+document.getElementbyID or getElementbyTag etc etc.
+
+
+jquery is kewl
