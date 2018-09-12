@@ -1,0 +1,5 @@
+notes javascript and jquery
+
+
+always use classes for css and ID's for javascript. 
+
