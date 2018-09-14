@@ -28,7 +28,8 @@
   </div>
 
   <!-- Here we have div called "random-number" where our random number will go -->
-  <h1 class="text-center" id="random-number"></h1>
+  <div class=""></div>
+  <h1 class="text-center ballarea" id="random-number"></h1>
 
   <script type="text/javascript">
 
@@ -40,15 +41,16 @@
       $("#random-button").on('click', function (){
         console.log("clicked");
         var randomNumbers = [];
-        for ( var x = 0; x < 10; x++) {
+        for ( var x = 0; x < 6; x++) {
         var rando = Math.floor(Math.random() * 10);
           randomNumbers.push(rando);
           console.log(rando);
           console.log(randomNumbers);
         }
-    
+        $(".ballarea").css("display","inline-flex");
+        $(".ballarea").css("margin-left","30%");
         // original way $("#random-number").text(randomNumbers);
-        var newText = $('<p>').append(randomNumbers.join(''));
+        var newText = $('<p>').append(randomNumbers.join('  '));
         $("#random-number").prepend(newText);
         random = rando;
         

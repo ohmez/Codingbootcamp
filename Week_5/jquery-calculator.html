@@ -84,17 +84,25 @@ function addition () {
 };
 
 $(".btn").on("click", function(event) {
+  var key = parseInt(this.value);
+  console.log(this);
+  console.log(this.value);
+  console.log(this.class);
+  $("#result").append(key);
+
+
   if ($(".number")){
     var key = this.value
     if (firstNum == undefined) {
       firstNum = parseInt(key);
       console.log("this is the 1st num: " + firstNum);
+      /// everything below this is not working properly; use your other method of assuming they will do it right. 
     if ( $.isNumeric(firstNum) | secondNum == undefined ) {
       console.log($.isNumeric(firstNum));
       secondNum = parseInt(key);
       console.log("this is the 2nd number: "  + secondNum);
     }
-    }
+  }
 
     console.log("this is a number element");
 
