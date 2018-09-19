@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    
+1. Query ID and class AKA - suit and #/value 
+2. set variable of X for 1-12 of the classes aka values. 
+3. set variable for y for 4 suits/ ID's.
+4. if yx != yx log yx. 
+
+
+FizzBuzz - psuedo first then code it. 
+loop 1-100; if number is divisible by 3 right fizz, if divisible by 5 write buzz, if 3 and 5 write fizzbuzz. 
+
+// step one create for loop with max of 100.
+// create if statment for 3 and 5 using booleans.
+// 
+<script type="text/javascript">
+// function () {
+//     for ( x = 0; x <= 100; x++) {
+//         if ((x%3 === 0) & (x%5 === 0)) {
+//             console.log(x +" Fizz Buzz");
+//         }
+//         else if (x%3 === 0) {
+//             console.log(x + " Fizz");
+//         }
+//         else if (x%5 === 0) {
+//             console.log(x + " Buzz");
+//         }
+
+//     }
+// };
+
+function isprime (num) {
+    if (num < 2) {
+        return false;
+    }
+    for ( var x = 2; x < num; x++) {
+        if (num % x === 0 ) {
+            return false;
+        }
+    }
+    console.log(num + " is prime");
+    return true; 
+};
+isprime(11);
+for (y = 2; y < 100; y++) {
+    isprime(y);
+
+}
+
+var nums = [1, 9, 50, 11, 25, 100];
+
+
+
+
+</script>
+
+
+
+
+</body>
+</html>

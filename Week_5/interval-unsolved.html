@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+
+<html lang="en-us">
+
+  <head>
+
+    <meta charset="UTF-8">
+    <title>Document</title>
+
+  </head>
+
+  <body>
+
+    <div id="show-number"></div>
+
+    <br>
+
+    <button id="stop">Stop</button>
+    <button id="resume">Resume</button>
+
+    <!-- jQuery -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    <!-- Script -->
+    <script type="text/javascript">
+      // creates variable of number set to 100
+    var number = 100;
+      // creates empty variable 
+    var intervalId;
+      // if ID stop is clicked run stop function
+    $("#stop").on("click", stop);
+      // if ID resume is clicked run run function
+    $("#resume").on("click", run);
+      // create the run function
+    function run() {
+      // creates value for premade variable which counts down at 1 second intervals
+      // runs the decrement function to count down I assume
+      intervalId = setInterval(decrement, 1000);
+      console.log(intervalId);
+    }
+      // create decrement function 
+    function decrement() {
+      // function counts down the variable number
+      number--;
+      // alters html of ID show-number with an h2 tag and the variable number contained
+      $("#show-number").html("<h2>" + number + "</h2>");
+      // if statement to stop at 0
+      if (number <= 0) {
+      // runs stop function if statement is true 
+        stop();
+      // alerts user times up
+        alert("Time Up!");
+      }
+    }
+      // create function stop
+    function stop() {
+      // clears the interval created on the variable intervalID
+      clearInterval(intervalId);
+      intervalId = clearInterval(intervalId);
+      console.log(intervalId);
+    }
+    // restarts program to run countdown. 
+    run();
+
+    </script>
+
+  </body>
+
+</html>
