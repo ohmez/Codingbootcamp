@@ -1,0 +1,21 @@
+Notes week 6 day 1 "tuesday 9/18/18"
+
+javascript numbers
+a secret of divisible by is :
+
+x%3 
+
+for ( x = 0; x <= 100; x++) {
+        if ((x%3 === 0) & (x%5 === 0)) {
+            console.log(x +" Fizz Buzz");
+        }
+        else if (x%3 === 0) {
+            console.log(x + " Fizz");
+        }
+        else if (x%5 === 0) {
+            console.log(x + " Buzz");
+        }
+
+
+
+an algorithim is steps to solve a problem. 
