@@ -1,0 +1,10 @@
+API - application programing interface 
+AJAX - searches and populates page with searched content.
+
+Pages used to always be seperate now with ajax and API's you can have one page change and adapt because of data moving in the background. 
+
+objects can exist within objects, objects are great ways call to things with names and name them yourself. 
+
+
+document. is working with the browsers API. 
+

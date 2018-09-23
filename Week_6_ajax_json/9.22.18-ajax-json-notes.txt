@@ -1,0 +1,52 @@
+-9/22/18 Absence Notes-
+
+We started by reviewing API's.
+API's are Application Programming Interface(s).
+These offer a set of pre-defined routines, code snippets, and tools for building software applications.
+API's ultimately have set syntax that you can use to communicate with their server.
+If you provide X, Y, and Z; they'll send back content related to those variables.
+Some API's can work with widgets and user content in other ways as well such as google maps.
+Three common use casses for API's
+1. provide pre-built code for getting and posting data to a database. EG - IMDB, Weather Data. 
+2. provide pre-built code for creating or utilizing software components EG google maps, spotify tools.
+3. interface with physical sensores or hardware - EG - nest thermostate, phillips hue 
+	- this I'm way more curious about; sounds pretty awesome to be able to work from the web with devices.
+	- this is like the amazon echo or google home, and they can turn lights on and stuff. 
+	- everyone gets really excited about this you can tell it's pretty awesome. 
+	- if you go to your http:// IP address then you know its running a web server.
+What is JSON 
+It's used to describe data objects; within javascript.
+Javascript Object Notation - JSON - simple JS objects "interchangable data"
+Objects have attributes which can be called to by name, then there are values to those attributes. 
+Objects can contain objects and arrays and arrays can contain objects; its pretty wicked data tree'ing (yeah i made that up)
+
+Get and .ajax retreive data from server online. 
+2 things are required whether its a get or post and the URL to post to; these are the Method and the URL. 
+Post sends data to the server. 
+There are paramaters that are needed to post and get from servers.
+Promises allow you to make decisions based on the response you get from the API server.
+Then allows you to use and move forward with the code. 
+var type = 'the+matrix';
+var queryURL = 'http://www.omdbapi.com/?t=' + type + '&y=&plot=short&r=json';
+$.ajax ({url: queryURL, method: 'GET'})
+	.done (function(response) {
+	console.log(response);
+	});
+Above is a commonline for ajax and its callback function
+
+Full-Stack is USER- HTML - CSS - JSON - JPG - JS - SERVER
+They communicate back and forth allowing the dynamic flow of a website. 
+I'm confident in API, JSON, AJAX Methods, and how to create a basic AJAX GET request. 
+Soon we will learn react which helps automate a lot of the front-mid end stuff HTML-JS it seems. 
+
+In the weather API I learned how to navigate an API site in order to learn the proper URL and syntax to make the calls. &= is a common syntax for URL syntax.
+We pulled data from the object we retreived from the API pull. I wonder if a pull repeatedly by refreshing will use up the API's allowed uses more quickly and if there's a way to pull to the cache if the sites been visited again.
+It was easy to complete the harder weather API project of populating the object data to the site and writing it all out. 
+
+The movie generator project was a little tricky, I didn't make a form I just used an input field so it only works when you click the search button and not when.
+I didn't know you could use $(element).val() to get the value so i used a longer string if $(e)[0].value so that was good to learn about. 
+JSON.stringify() stumped me; had to google that. 
+
+We finished with the movie search and button projects.
+I was able to get mine to work through all steps slightly differently than the way the solved showed.
+Overally I'm feeling really confident with the topics covered today and I think the only challenges I'll have will be when to make a jquery selector a variable or not; I always want to make them variables and it ends up making me write more than needed sometimes; I just don't like writting out $("element") over and over.	 :)  
