@@ -1,0 +1,37 @@
+Thursday 9/27/18 Class Notes
+Officially in week 7; 25% of the way done. 1/4th
+Starting with activity of creating a dynamic todolist.
+We create and populate HTML with jquery created elements.
+I was able to finish this project in time for the review of it.
+I feel very comfortable with this.
+Oh there was a good point Niko said its only usefull if we don't refresh
+the page. I wonder if there's a way to maintain data thats populated by the user..
+Today we're talking about ways to make things persist longer, YAY.
+I love it when the next logical question is what we study.
+This is called persistance. 
+Session storage will keep the data even if refreshed
+	- but once tab is closed data is gone.
+Cookies can help access a server.
+local storage can be updated;used offline.
+once reconnected it can be updated to cookies or server.
+in console
+localStorage - returns object, with data content
+sessionStorage - returns object, with data content
+in console- application
+you can see where files are stored and file pathing?
+thats kinda creepy... hmmm (hackhelper??)
+in console -
+localStorage.setItem('foo', 'bar');
+now obj shows foo as they 'key' with value of bar.
+localStorage.whatever = 'hello';
+this is like creating keys/properties of objects, you can make them or call to them with the . indicator. 
+cookies stay if u close browser.. local storage doesnt..
+Sessionstorage lives inside the window; this is probably where javascript memory objects are actually stored.
+localstorage is not secure and is stored as a string.
+cookies operate similar to localstorage but have a different syntax
+document.cookie = "somename"="somevalue";
+Working on the todolist with local storage was rough but the solution made sense; I think it was hardest because I didn't want to rewrite my whole initial solution.
+Overall I don't see many concerns with the material covered today and I feel very confident in my ability and understanding from class.
+
+
+
