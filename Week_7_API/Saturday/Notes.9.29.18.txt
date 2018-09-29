@@ -1,0 +1,13 @@
+9/29/18 Notes - servers and api's etc. 
+$.param will pass an object into the ajax using GET paramaters '?q=test&p=test+learn'.
+this will be used for both get and post requests. param creates the formatting.
+Today we're talking about server side storage.
+This is the tool to allow us to create applications. 
+We can store documents and images in firebase; and is able to communicate with other devices; this is a server side storage.
+amazon AWS, Microsoft Azure, google firebase- are top 3 web servers "clouds"
+
+Firebase allows some free databases.
+database.ref().set({}); 
+this will overrite 
+database.ref().push();
+this will add a new database/child but with a random name. 

@@ -1,0 +1,9 @@
+9/25/18 Notes - ajax 
+.then is a promise or a deferred object. 
+meaning its waiting for the completion of the previous request. 
+$(this).attr("data-person") will retrieve the attribute.
+$(this).attr("data-person", "john boss") will create attribute and make value
+	-rewrite if it already exists. 
+
+$this.val() will get the attr value's value
+$this.val('banana') will set the value to banana for all thats selected. 
