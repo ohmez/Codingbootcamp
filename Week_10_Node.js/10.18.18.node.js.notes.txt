@@ -1,0 +1,35 @@
+10-18-18 Thursday class - Starting on Node.js
+CTRL ~ will open terminal in vs code 
+We open node and it's a terminal/dos type program.
+we type process and it logs a ton of stuff; seems to be what the server has.
+We're starting on backend (YAYYY) TRUEE backend!
+MERN - Mongo, Express, React, Node.
+Most of these are built with Javascript so we know a bit of the language needed already.
+When we use the Network part of the developer tools we can see what requests are being made, these are server communications done through MERN.
+HTTPS - is a secure server sending HTTP data, hypertext transfer protocol.
+in bash if you call node it will allow you to write javascript.
+We did the siracha activity which allos you to call node (file).js
+and it will run the code in th at file logging anything in the console to the terminal/console in bash. 
+I was curious if i put touch test.html in my JS if it would create a file but it didn't work. I hope we can do something like that eventually.
+Create a file in bash from running the script. 
+We're typing an argument then putting a paramater to it.
+c.log(process); will run though apparently. woah thats so much text again .
+the arguments are arranged in an array like argv[1].
+process.argv - process is like the window, its the root.
+When trying to make a calculator with node using argv it considers the content as a string. putting parseFloat(process.argv[2]+3) will make it work.
+We spend time on an activity to check if two paramaters given are equal to eachother, it's pretty simple since you can just use the logic test == which compares if values are equal to eachother. 
+ohh you can also use if statements and they'll work aswell using the paramaters you pass in. That's wicked cool. 
+We then made a calculator which was really easy to do for the add multiply, but the algebra part was tricky, mainly to figure out how to call to the index of a string, I honestly had no idea you could index it the same as an array, var x = "hello world"  x[0] = h, x[10] = d. 
+
+module.export will return an object, if you present it with variables that call to other objects with content you can populate a lot of data.
+This will allow you to only return or possibly even run only what you specify in the module.export
+this is pretty awesome, you could protect your api key with this; which i really want to learn so i can start my project! 
+module.export should be at the end of your code; synchronis.
+
+module.export is used by calling require on another javascript file.
+So I could have my API key in hidden.js and in the logic.js on my site I could call require hidden.js and potentially run the api safely.... 10 points to slytherin?? (P.S. I'm slytherin)
+
+inside node or in bash/
+node console.log(this)  >  meaning this can be used within node aswell, it would represent the file its being called to.
+We then exported bands and integrated a forloop of the objects.
+
