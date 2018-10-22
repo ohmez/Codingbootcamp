@@ -1,0 +1,16 @@
+10/2/2018 Firebase class
+Today we started off with some activities writing timecards to firebase.
+This was pretty difficult especially with how fast we had to write the HTML using bootstrap then create the firebase. 
+We went over push() in firebase.
+This generates a random key and pushes whatever value into the database as a new parent or inside of a specified child.
+if you do push({}) then you can add even more than one value into the new push key. Which is adding named key's and values ultimately to the random generated key we made with push.
+With using push we're able to push the timesheet variables to the database and pull and populate them by having listener events of the database.
+
+Listener events are on("value") or "child_added" or several other options.
+Ultimately they're listening to changes of a specified class to the database or if they exist whent he page is initially loaded.
+
+Then we reviewed Moment.JS which is a premade library for formating and calculating time and dates within Javascript. 
+
+Its a prebuilt clock which can be linked in to any webpage and use its functions for calculations surrounding time and dates. 
+
+
