@@ -1,24 +1,35 @@
 var fs = require('fs');
-var file = "best_things_ever.txt";
+var file = process.argv[2];
 var format = "utf8";
-var newBest = process.argv[2];
+var newBest = "," + process.argv[3];
 
-function Fs () {
-  
-Fs.readFile = fs.readFile(file, format, function(err, data) {
-  if (err) {
+// fs.readFile(file, function(err,data) {
+// if(err) {console.log(err);} else { var dataArr = data.split(","); console.log(dataArr);}
+// });
+if (!process.argv[3]) {
+fs.readFile(file, format, (err,data) => {
+    if(err) throw err;
+    console.log(data);
+})
+}// end if no param given only read 
+if (process.argv[3]) {
+fs.appendFile(file, newBest, function(err) {
+    if (err) {
     return console.log(err);
-  }
-   data = data.split(",");
-  
-  for (var i = 0; i < data.length; i++) {
-    console.log(data[i]);
-  } // end readfile
-Fs.append = fs.appendFile(file, newBest, function(err) {
-  if (err) {
-   return console.log(err);
-  }
-  Fs.readFile();
-};
-  
- 
+    }
+    fs.readFile(file, format,(err,data) => {
+        if(err) throw err;
+        console.log(data);
+    });
+  });
+}// end if adding content. 
+
+if(process.argv[4] == 'split') {
+fs.readFile(file,format,(err,data) => {
+if(err) throw err; 
+data = data.split(',');
+for(x=0; x < data.length; x++) {
+    console.log(data[x]);
+}// end for loop
+});// end readFile function
+}// end if split 

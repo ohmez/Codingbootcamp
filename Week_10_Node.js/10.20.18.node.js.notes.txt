@@ -1,0 +1,22 @@
+10/20/2018 Class Notes - Node.JS -
+We started by reviewing last calss which was on how to compare arguments given in the terminal.
+process.argv[index#] calls to the values provided in terminal which start at argv[2]. argv[1] is the root pathing of the process to call the file.
+We compared if (argv[2] == argv[3]) or console.log(argv[2]==argv[3]); both will compare the first two arguments beyond the root. 
+Process is an object, and argv is an array.
+% is modulus which determines the remainder after dividing. 
+9%7 would = 2, since 2 is leftove after 9/7. 
+Math.pwr(10,2) is 10^2(squared).
+Recursion is when a function calls itself, which is ultimately an infinite loop unless specified otherwise. 
+Require(); is a built in function of node, but this must be installed
+in node :
+npm init
+npm install require
+^^ This is how you enable require in your node packets, there are tons of method options to install from node.
+Request is a backend API call that can pull a whole https site elements and all will be pulled. 
+you can JSON.parse(body).property to call directly to values in the request.
+We did multiple activities around require('fs') fs = file system.
+This is a way for node to write and read files as well as append them.
+Its like an object with properties;
+fs.readFile("filename", function (err,data) { if(err)throw err; } console.log(data); or data = data.split(',') first then forloop or call whole array. 
+
+

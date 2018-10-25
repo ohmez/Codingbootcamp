@@ -4,13 +4,16 @@ var amount = process.argv[3];
 function Fs (transaction, amount) {
 Fs.total = fs.readFile("bank.txt","utf8", function(err,data) {
 if (err) {
-reurn console.log(err);} else {
+return console.log(err);} else {
 var total = 0;
 data = data.split(',');
 for(x = 0; x < data.length; x++) {
 total += data[x];
 } console.log(total); // end for loop
-}); // end Fs.total 
+} // end else
+});// end fs.total
+
+
 
 };// end Fs Function/object
 
