@@ -18,5 +18,6 @@ We did multiple activities around require('fs') fs = file system.
 This is a way for node to write and read files as well as append them.
 Its like an object with properties;
 fs.readFile("filename", function (err,data) { if(err)throw err; } console.log(data); or data = data.split(',') first then forloop or call whole array. 
+appendFile, writeFile, readFile, have a lot that can be done, especially considering the bank example, thats pretty huge. 
 
 

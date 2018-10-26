@@ -1,0 +1,5 @@
+10/25/18 Notes - Node
+npm is a command of node
+npm init will prompt creating your own new package-json file.
+entering through will make generic info, then Y for yes, then npm install
+npm install (method) I.E. request, require, or any other methods u want.
