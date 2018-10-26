@@ -31,9 +31,9 @@ console.log(address);
 
 
 // Build your address as an array or string
-geocoder.geocode(  address, (err, result) => {
+geocoder.geocode( address, (err, result) => {
   if(err) throw err; 
-  console.log(JSON.stringify(result));
+  console.log(JSON.stringify(result, null, 1));
 })
 
 // console.log(geocoder);
