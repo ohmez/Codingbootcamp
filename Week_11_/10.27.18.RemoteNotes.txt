@@ -1,0 +1,23 @@
+10/27/18 Node.js class
+
+npm install -g 
+this is a global install for all of your folders
+npm install -g require would be a good one to do i'd think
+npm install -g inspect-process
+allows you to cmd: inspect filename instead of node filename, this will open the inspect tool and you can debugg your code, thats rad. I was having issues with homework. But i've figured out my issues since then.
+We reviewed objects and creating their keys. I feel very comfortable with this. I try to build a lot of stuff using objects and keys but it doesn't always work, still figuring out using them as callbacks.
+We're doing an example of this sort kind of where we're creating new objects using the stored command of javascript 'new'.
+I spiced up my portfolio using constructs.
+Constructs are like coodkie cutters, they construct objects by a function 
+they may or may not be required to start with a capitol letter.
+function Construct(){ this.that = that}; using this. to create multiple and with different values. 
+module.exports = Animal; use require('./rainingc&d's') to call the functions from another javasheet.
+Instansiation - creating instances is calling with 'new'.
+java is loose script instead of var bob it'd be string bob; var has strong conditions in it already.
+return this.hp >0; this will return a true or false  boolean if it is true or false; dynamic state boolean.
+the rpg task was pretty easy making constructs for characters, it was kind of tricky initially to get the setting keys as functions.
+but after repeating it a couple times its really coming together for this tamagotchi activity. 
+I'm excited for the next step of tamagotchi's user input with these constructs is really cool.
+
+
+

@@ -1,5 +1,21 @@
 10/25/18 Notes - Node
-npm is a command of node
+npm is a command of node - node package manager 
 npm init will prompt creating your own new package-json file.
 entering through will make generic info, then Y for yes, then npm install
 npm install (method) I.E. request, require, or any other methods u want.
+
+Thursday 2/14/2019 scheduled last day
+Moving to 2/16/2019 - no problems on my part with this. (might be a zoom one instead?)
+
+We start with command sort and review process.argv.
+npm install grabs libraries at a specific moment in time.
+package-lock.json will hold their library; if they make changes and you keep your lock file safe it'll work. if you npm install again it'll overwrite it seems. 
+npm has tons of CDN type packages already built to communicate with API's
+I wonder if it has one for the riot games one I want to use...
+okay it does but its super different, these varry so much. thats intimidating. 
+Finishing up the geocode helps me feel much better about how to use npm's
+atleast in this format.
+They have limitations to what they can do depending on who made them and for what purpose. these more highend/ common ones are built pretty cool.
+This is where object orriented coding comes into play bigtime.
+I'm loving the structure of things like options and seeing what other npms have. 
+
