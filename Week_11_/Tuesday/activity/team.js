@@ -2,6 +2,9 @@ var inquirer = require('inquirer');
 var teamStarters = [];
 var teamSubs = [];
 var teamWins = 0;
+var teamsize = 0;
+var games = 0;
+
 function Player(name, position, offense, defense) {
     this.name = name;
     this.position = position;
@@ -28,7 +31,7 @@ function Player(name, position, offense, defense) {
          this.offense + "\nDefense score: " + this.defense)
      };
 }; // end Player Constructor. 
-var teamsize = 0;
+
 function buildTeam() {
     if(teamsize === 0) { console.log(" your first two players are startes"); }
     if(teamsize < 3) {
@@ -70,11 +73,11 @@ inquirer.prompt([
 };// end build team function. 
 
 buildTeam(); // global call to buildTeam function 
-var games = 0;
+
 function playGame() {
     var o = Math.floor(Math.random()*20) +1;
     var d = Math.floor(Math.random()*20) +1;
-    if(games < 2) {
+    if(games < 5) {
         var totalO = 0;
         var totalD = 0;
         for(var x=0; x<teamStarters.length; x++) {
@@ -93,7 +96,7 @@ function playGame() {
         // defense comparison
       
     games++
-    if(games > 0 && games < 2) {
+    if(games > 0 && games < 5) {
         inquirer.prompt({type:'list',
         message: 'Do you want to sub a player?',
         choices: teamStarters,
@@ -118,5 +121,36 @@ function playGame() {
     } // if round 1-last end 
     playGame();
 }
+    if( games > 2) {
+        if( teamWins >0) {
+        for(var x=0; x<teamStarters.length; x++) {
+            console.log("You've won this match"); 
+            teamStarters[x].goodGame();
+            teamStarters[x].printStats();
+        }
+        }// end if team wins positive check 
+        if( teamWins < 0) {
+        for(var x=0; x<teamStarters.length; x++) {
+            console.log("You've lost this match");            
+            teamStarters[x].badGame();
+            teamStarters[x].printStats();
+        }
+        }// end if team wins negative check 
+        else {}
+    }// end if last game check
 };
 // var starter = new Player;
+function restart() {
+   
+    inquirer.prompt([{type: 'list', message: 'Would you like to play again?', choices: 'Yes, No', default: 'No', name: 'restart'}])
+    .then(answers => {
+        if(answers.restart ==  'Yes') {
+        games = 0;
+        teamWins = 0;
+        playGame();            
+        } // end if restart is yes
+         if(answers.restart ==  'No') {
+         console.log("thanks for playing, come back soon"); return}
+    });// end inquirerer prompt the answers function. 
+    
+};
