@@ -16,7 +16,7 @@ function log(message,cb) {
 log(' This works ', function (message) {
     console.log(message);
 });
-log(' But this doesnt ', toConsole(message));
+log(' But this doesnt ', toConsole);
 
 
 // I'd like to understand why the annonymous function works 
