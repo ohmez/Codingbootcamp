@@ -18,6 +18,7 @@
   "homepage": "https://github.com/ohmez/Codingbootcamp#readme",
   "dependencies": {
     "inquirer": "^6.2.0",
+    "mysql": "^2.16.0",
     "request": "^2.88.0",
     "require": "^2.4.20"
   }
