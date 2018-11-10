@@ -3,7 +3,7 @@ var connection = mysql.createConnection({
     host: 'localhost',
     port: 3306,
     user: 'root',
-    password: 'password',
+    password: 'Wh0v1@n',
     database: 'playlist_DB'
 });
 
@@ -11,7 +11,9 @@ connection.connect((err) => {
     if (err) throw err;
     console.log('connected as ' +connection.threadId);
     console.log('------------\n');
-    CreateSongsTable();
+    // CreateSongsTable();
+    addSong('Caribou Lou', 'Tech N9ne','rap');
+    addSong('The Kill', '30 Seconds To Mars', 'rock');
 });
 
 function CreateSongsTable() {
@@ -26,6 +28,13 @@ function CreateSongsTable() {
         connection.end();
     })
     
+};
+
+function addSong (title, artist, genre) {
+    connection.query('INSERT INTO songs (title,artist,genre) VALUES ('+'"'+title+'","'+artist+'","'+genre+'")',(err,resp) => {
+        if (err) {console.log(err);}
+        else {console.log(resp);}
+    })
 };
 
 
