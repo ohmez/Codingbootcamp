@@ -21,3 +21,4 @@ host: "localhost",
 ```
 
 inquirer prompt in combination with sql was very tricky. 
+inquirer didn't seem to populate results as I'd expect as a list from an array that's generated in a function. 
