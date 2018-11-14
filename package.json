@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/ohmez/Codingbootcamp#readme",
   "dependencies": {
+    "express": "^4.16.4",
     "inquirer": "^6.2.0",
     "mysql": "^2.16.0",
     "request": "^2.88.0",
