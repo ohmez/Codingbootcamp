@@ -1,0 +1,19 @@
+{
+  "name": "calculatorapi",
+  "version": "1.0.0",
+  "description": "url basec calculator /add; /subtract;",
+  "main": "calculatorApi.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "options": "node calculatorApi, node tv, node wizard"
+  },
+  "keywords": [
+    "calculator"
+  ],
+  "author": "keagan cheatwood",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.16.4",
+    "express-handlebars": "^3.0.0"
+  }
+}
