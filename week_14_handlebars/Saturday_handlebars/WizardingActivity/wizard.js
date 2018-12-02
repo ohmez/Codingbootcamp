@@ -6,7 +6,7 @@ var connection = mysql.createConnection({
     host:"localhost",
     port: 3306,
     user: 'root',
-    password: 'Wh0v1@n',
+    password: 'password',
     database: 'wizzardry_db'
 });
 app.listen(PORT,(err) => {
