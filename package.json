@@ -23,5 +23,10 @@
     "mysql": "^2.16.0",
     "request": "^2.88.0",
     "require": "^2.4.20"
+  },
+  "devDependencies": {
+    "eslint": "^5.9.0",
+    "eslint-config-airbnb-base": "^13.1.0",
+    "eslint-plugin-import": "^2.14.0"
   }
 }
