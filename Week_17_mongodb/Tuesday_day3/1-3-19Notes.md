@@ -51,6 +51,53 @@ db.books.update(
 ```
 update model goes db.collection.update({parameter to find item to update}, {what to update on the item}, (callback))
 
-37 minutes in 7:09PM on the time on recording stopping point. [video](https://codingbootcamp.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=94a9b7f3-e0eb-4658-b3ce-a9cb001928b4)
-
-First activity completed, next looks to be example of mongoose. 
+### Activity 2
+We review an example of setting up schemas with mongoose and mongoDb.
+This is very similar to the schema's or models for sequelize.
+We go over an example and the schemas are built in object references as well.
+```js
+var UserSchema = new Schema({
+username: {
+     type: String,
+     trim: true,
+   },
+   password: {
+     type: String,
+     trim: true,
+     required: true,
+     validate: [function(input){ return input.length>=6;}, "Password must be 6 characters at least"]
+   },
+   email: {
+     type: String,
+     match:  [/.+@.+\..+/, "Please enter a valid e-mail address"],
+   },
+   userCreated: {
+     type: Date,
+     default: Date.now
+   }
+});
+var User = mongoose.model("User", UserSchema);
+module.exports = User;
+```
+### Activity 3 
+We now add on some methods to our db schema. 
+these allow us to perform functions on the users data before we send it in the response. 
+we create functions in the schema model and then call to them in the server routes.
+```js
+ var user = new User(req.body);
+  user.setFullName();
+  user.lastUpdatedDate();
+```
+These are called on the server and then ran on the model
+```js
+UserSchema.methods.setFullName = function() {
+  this.fullName = this.firstName +' '+this.lastName;
+  return this.fullName;
+};
+// 2. lastUpdatedDate: sets the current user's `lastUpdated` property to Date.now()
+UserSchema.methods.lastUpdatedDate = function() {
+  this.lastUpdated = Date.now();
+  return this.lastUpdated;
+};
+```
+Week 18 Day 3 has the examples.
