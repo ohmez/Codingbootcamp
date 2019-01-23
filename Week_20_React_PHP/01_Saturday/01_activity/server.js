@@ -4,8 +4,8 @@ const PORT = process.env.PORT || 3001;
 const mongoose = require('mongoose');
 const db = require("./models");
 
-mongoose.connect('mongodb://localhost/crm',() => {
-  console.log('connected to db:crm');
+mongoose.connect("mongodb://localhost/crm", { useNewUrlParser: true }, () => {
+  console.log('db connected');
 });
 const app = express();
 // Serve up static assets (usually on heroku)
@@ -14,7 +14,8 @@ if (process.env.NODE_ENV === "production") {
 }
 // this could go into a routes file and require routes.
 app.get("/api/customers", (req,res) => {
-  db.Customer.fid({})
+  console.log('api customers requested');
+  db.Customer.find({})
   .then((customers) =>{res.json(customers)})
   .catch(() => res.end());
 });
