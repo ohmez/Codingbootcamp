@@ -35,7 +35,7 @@ class App extends Component {
     return (
         <Container fluid>
         <Navbar currentPage={this.state.page} handlePageChange={this.handlePageChange}></Navbar>
-        {this.state.page === 'list'?<h1>List</h1> />: <h1>Add</h1>}
+        {this.state.page === 'list'?<h1>List</h1>: <h1>Add</h1>}
       <Router>
         <Route exact path="/list" render={(props) => <CustomerList list={this.state.customers} />} />
       </Router>
